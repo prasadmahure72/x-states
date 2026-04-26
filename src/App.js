@@ -49,7 +49,7 @@ function App() {
       .then((r) => r.json())
       .then((data) => setCities(data))
       .catch(console.error);
-  }, [selectedState]);
+  }, [selectedState, selectedCountry]);
 
   return (
     <div className="container">
